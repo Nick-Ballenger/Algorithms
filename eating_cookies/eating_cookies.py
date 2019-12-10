@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import sys
-
+print("Let's do this!")
 # The cache parameter is here for if you want to implement
 # a solution that is more efficient than the naive 
 # recursive solution
