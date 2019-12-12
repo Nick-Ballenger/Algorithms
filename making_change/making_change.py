@@ -3,7 +3,15 @@
 import sys
 
 def making_change(amount, denominations):
-  pass 
+  solutions = [0] * (amount + 1)
+  solutions[0] = 1
+
+  for coin in denominations:
+    for bigger_coin in range(coin, amount + 1):
+      leftover = bigger_coin - coin
+      solutions[bigger_coin] += solutions[leftover]
+
+  return solutions[amount]
 
 
 if __name__ == "__main__":

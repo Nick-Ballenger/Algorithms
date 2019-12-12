@@ -6,7 +6,6 @@ import sys
 # a solution that is more efficient than the naive 
 # recursive solution
 def eating_cookies(n, cache={}):
-  # special cases
   if n < 0: 
     return 0
 
