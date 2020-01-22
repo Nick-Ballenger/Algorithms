@@ -10,8 +10,10 @@ def find_max_profit(price):
   max_profit = 0
   
   for i in range(len(price)-1):
+    
     if  bought_price == 0 and price[i] < price[i+1]:
       bought_price = price[i]
+
     elif bought_price != 0 and price[i] > price[i+1]:
       if sold_price < price[i]:
         sold_price =  price[i]
